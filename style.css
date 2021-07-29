@@ -130,6 +130,7 @@
   }
  
   p {
+    text-transform: none;
     margin-top: 2rem;
     margin-bottom: 25px;
     font-family: Roboto, sans-serif;
