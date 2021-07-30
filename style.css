@@ -51,6 +51,7 @@
   }
 
   body {
+    width: 100%;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -62,6 +63,9 @@
     min-width: 800px;
     background-color: #ccc;
     display: flex;
+    justify-content: center;
+    
+    
   }
   
   .rightCol,
@@ -92,7 +96,7 @@
   }
   
   .leftCol {
-    width: 35%;
+    width: 37%;
     text-align: left;
     color: #fff;
     color: hsla(0, 0%, 100%, .59);
@@ -108,24 +112,9 @@
     color: hsla(0, 0%, 100%, .59);
     text-decoration: none;
   }
-
-  
-.skill .progress {
-    height: 2px;
-    position: relative;
-    width: 90%;
-    border-radius: 2px;
-    overflow: visible;
-  }
-  
-  .skill .progress .determinate {
-    /* background-color: #78909c; */
-    position: absolute;
-    top: 0;
-    bottom: 0
-  }
   
   .m_box {
+    width: 37%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
   }
  
@@ -162,3 +151,22 @@
     font-size: 12px;
     color: rgb(75, 74, 74);
   }
+  
+
+  @media (max-width: 600px) {
+    .leftCol, .rightCol {
+      width: 100%;
+    }
+  
+    body {
+      width: 0;
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+      font-family: Roboto, sans-serif;
+    }
+    
+    }
+  
+    
+  
